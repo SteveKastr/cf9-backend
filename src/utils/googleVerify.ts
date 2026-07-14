@@ -24,7 +24,7 @@ export async function verifyGoogleIdToken(idToken: string): Promise<GoogleUserPa
   console.log("TICKET 1>>>", ticket);
 
   const payload = ticket.getPayload();
-  console.log("TICKET 2>>>", payload);l
+  console.log("TICKET 2>>>", payload);
 
   if(!payload){
     throw new Error('No payload in Google Token')
